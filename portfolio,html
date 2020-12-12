@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>RED_CRYSTAL</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<style>
+
+
+		body{
+			margin: 0;
+			padding: 0;
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-weight: 400;
+		}
+
+		.main{
+			background-image: url(https://i.postimg.cc/QCWQWSr2/1-1.jpg);
+			background-position: center center;
+			background-size: cover;
+			width: 100%;
+			height: 100vh;
+		}
+
+		.site{
+			float: left;
+			font-size: 16px;
+			margin: 15px;
+			color: #333333;
+		}
+
+		.date{
+			text-align: right;
+			float: right;
+			font-size: 12px;
+			color: #666666;
+			margin: 15px;
+		}
+
+		.mainlogo{
+			width: 520px;
+			border-bottom: 5px solid #333333;
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom: 20px;
+		}
+
+		.mainlogo img{
+			height: 72px;
+		}
+
+		.main h1{
+			font-size: 100px;
+			color: #333333;
+			display: inline-block;
+			font-weight: 400;
+			padding-left: 15px;
+			line-height: 90px;
+		}
+
+		.main h4{
+			font-size: 32px;
+			color: #333333;
+			display: inline-block;
+			padding-left: 15px;
+		}
+
+		.main .crystal{
+			padding-left: 152px;
+		}
+
+		.helper{
+			height: 34%;
+		}
+
+		.triangle{
+			display: block;
+			text-align: center;
+		}
+
+		.align{
+			opacity: 0.3;
+			position: absolute;
+			bottom: 15px;
+		}
+
+		.portfolio{
+			width: 992px;
+			margin-top: 155px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		h2{
+			font-size: 50px;
+			text-align: center;
+			color: #333333;
+		}
+
+		.contents{
+			margin-top: 100px;
+			text-align: center;
+		}
+
+		.contents a{
+			display: inline-block;
+			width: 310px;
+			height: 425px;
+			margin: 8px;
+			text-decoration: none;
+			color: #333333;
+			text-align: center;
+		}
+
+		.contents a:hover .image{
+			border-radius: 35px;
+		}
+
+		.title{
+			width: 80%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		.title h3{
+			margin-top: 35px;
+			font-size: 28px;
+		}
+
+		.title p{
+			font-size: 16px;
+			margin-top: 15px;
+			color: #666666;
+		}
+
+		.clearfix{
+			clear: both;
+		}
+
+		.about{
+			margin-top: 180px;
+			width: 100%;
+			height: 600px;
+			background-color: #F2F2F2;
+			box-sizing: border-box;
+		}
+
+		.about h2{
+			padding-top: 85px;
+			margin-bottom: 60px;
+		}
+
+		.about img{
+			border-radius: 35px;
+			overflow: hidden;
+			width: 140px;
+			height: 185px;
+			margin: 5px;
+		}
+
+		.photo{
+			display: block;
+			text-align: center;
+		}
+
+		.about p{
+			text-align: center;
+			margin-top: 45px;
+			font-size: 16px;
+			color: #666666;
+			padding: 10px
+		}
+
+		.about .position{
+			width: 992px;
+			padding: 10px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.logoimg{
+			width: 992px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 10px;
+		}
+
+		.logoimg img{
+			margin-top: 100px;
+			width: 80%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.logoimg p{
+			font-size: 16px;
+			margin-top: 60px;
+			color: #666666;
+			text-align: center;
+		}
+
+		.lightgrey{
+			color: #CCCCCC;
+			font-weight: 300;
+		}
+
+		.footer{
+			width: 992px;
+			padding: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 155px;
+		}
+
+		.footer img{
+			width: 28px; 
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.icon{
+			text-align: center;
+		}
+
+		.footer p{
+			margin-top: 25px;
+			font-size: 12px;
+			color: #CCCCCC;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+
+		@media(max-width: 992px){
+
+			.main{
+				background-image: url(https://i.postimg.cc/QCWQWSr2/1-1.jpg);
+				background-position: center center;
+				background-size: cover;
+				width: 100%;
+				height: 550px;
+			}
+
+			.site{
+				float: left;
+				font-size: 16px;
+				margin: 15px;
+				color: #333333;
+			}
+
+			.date{
+				text-align: right;
+				float: right;
+				font-size: 12px;
+				color: #666666;
+				margin: 15px;
+			}
+
+			.mainlogo{
+				width: 520px;
+				border-bottom: 5px solid #333333;
+				margin-left: auto;
+				margin-right: auto;
+				padding-bottom: 20px;
+			}
+
+			.mainlogo img{
+				height: 72px;
+			}
+
+			.main h1{
+				font-size: 100px;
+				color: #333333;
+				display: inline-block;
+				font-weight: 400;
+				padding-left: 15px;
+				line-height: 90px;
+			}
+
+			.main h4{
+				font-size: 32px;
+				color: #333333;
+				display: inline-block;
+				padding-left: 15px;
+			}
+
+			.main .crystal{
+				padding-left: 152px;
+			}
+
+			.helper{
+				height: 32%;
+			}
+
+			.triangle{
+				display: block;
+				text-align: center;
+			}
+
+			.align{
+				opacity: 0;
+				position: absolute;
+				bottom: 15px;
+			}
+
+			.portfolio{
+				width: 100%;
+				margin-top: 100px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			h2{
+				font-size: 32px;
+				text-align: center;
+				color: #333333;
+			}
+
+			.contents{
+				margin-top: 70px;
+				text-align: center;
+			}
+
+			.contents a{
+				display: inline-block;
+				width: 30%;
+				height: 295px;
+				margin: 5px;
+				text-decoration: none;
+				color: #333333;
+				text-align: center;
+			}
+
+			.contents a:hover .image{
+				border-radius: 35px;
+			}
+
+			.title{
+				width: 90%;
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			.title h3{
+				margin-top: 35px;
+				font-size: 28px;
+			}
+
+			.title p{
+				font-size: 16px;
+				margin-top: 15px;
+				color: #666666;
+			}
+
+			.clearfix{
+				clear: both;
+			}
+
+			.about{
+				margin-top: 130px;
+				width: 100%;
+				height: 500px;
+				background-color: #F2F2F2;
+				box-sizing: border-box;
+			}
+
+			.about h2{
+				padding-top: 50px;
+				margin-bottom: 40px;
+			}
+
+			.about img{
+				border-radius: 35px;
+				overflow: hidden;
+				width: 140px;
+				height: 185px;
+				margin: 5px;
+			}
+
+			.photo{
+				display: block;
+				text-align: center;
+			}
+
+			.about p{
+				text-align: center;
+				margin-top: 40px;
+				font-size: 16px;
+				color: #666666;
+			}
+
+			.about .position{
+				width: 100%;
+				padding: 0px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.logoimg{
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 10px;
+			}
+
+			.logoimg img{
+				margin-top: 100px;
+				width: 60%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.logoimg p{
+				font-size: 16px;
+				margin-top: 60px;
+				color: #666666;
+				text-align: center;
+			}
+
+			.footer{
+				width: 100%;
+				padding: 10px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 100px;
+			}
+
+			.footer img{
+				width: 28px; 
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+
+			.icon{
+				text-align: center;
+			}
+
+			.footer p{
+				margin-top: 25px;
+				font-size: 12px;
+				color: #CCCCCC;
+				text-align: center;
+				margin-bottom: 50px;
+			}
+		}
+
+		@media(max-width: 414px){
+
+			.main{
+				background-image: url(https://i.postimg.cc/QCWQWSr2/1-1.jpg);
+				background-position: center center;
+				background-size: cover;
+				width: 100%;
+				height: 350px;
+			}
+
+			.site{
+				float: left;
+				font-size: 12px;
+				margin: 15px;
+				color: #333333;
+			}
+
+			.date{
+				text-align: right;
+				float: right;
+				font-size: 8px;
+				color: #666666;
+				margin: 15px;
+			}
+
+			.mainlogo{
+				width: 320px;
+				border-bottom: 3px solid #333333;
+				margin-left: auto;
+				margin-right: auto;
+				padding-bottom: 10px;
+			}
+
+			.mainlogo img{
+				height: 35px;
+			}
+
+			.main h1{
+				font-size: 50px;
+				color: #333333;
+				display: inline-block;
+				font-weight: 400;
+				padding-left: 8px;
+				line-height: 50px;
+			}
+
+			.main h4{
+				font-size: 16px;
+				color: #333333;
+				display: inline-block;
+				padding-left: 8px;
+			}
+
+			.main .crystal{
+				padding-left: 130px;
+			}
+
+			.helper{
+				height: 32%;
+			}
+
+			.triangle{
+				display: block;
+				text-align: center;
+			}
+
+			.align{
+				opacity: 0;
+				position: absolute;
+				bottom: 15px;
+			}
+
+			.portfolio{
+				width: 100%;
+				margin-top: 55px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			h2{
+				font-size: 32px;
+				text-align: center;
+				color: #333333;
+			}
+
+			.contents{
+				margin-top: 30px;
+				text-align: center;
+			}
+
+			.contents a{
+				display: inline-block;
+				width: 30%;
+				height: 295px;
+				margin: 5px;
+				text-decoration: none;
+				color: #333333;
+				text-align: center;
+			}
+
+			.contents a:hover .image{
+				border-radius: 35px;
+			}
+
+			.title{
+				width: 90%;
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			.title h3{
+				margin-top: 20px;
+				font-size: 16px;
+			}
+
+			.title p{
+				font-size: 12px;
+				margin-top: 10px;
+				color: #666666;
+			}
+
+			.clearfix{
+				clear: both;
+			}
+
+			.about{
+				margin-top: 70px;
+				width: 100%;
+				height: 420px;
+				background-color: #F2F2F2;
+				box-sizing: border-box;
+			}
+
+			.about h2{
+				padding-top: 40px;
+				margin-bottom: 40px;
+			}
+
+			.about img{
+				border-radius: 35px;
+				overflow: hidden;
+				width: 100px;
+				height: 130px;
+				margin: 5px;
+			}
+
+			.photo{
+				display: block;
+				text-align: center;
+			}
+
+			.about p{
+				text-align: center;
+				margin-top: 40px;
+				font-size: 12px;
+				color: #666666;
+			}
+
+			.about .position{
+				width: 100%;
+				padding: 0px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.logoimg{
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 10px;
+			}
+
+			.logoimg img{
+				margin-top: 70px;
+				width: 60%;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.logoimg p{
+				font-size: 12px;
+				margin-top: 60px;
+				color: #666666;
+				text-align: center;
+			}
+
+			.footer{
+				width: 100%;
+				padding: 10px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 55px;
+			}
+
+			.footer img{
+				width: 28px; 
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+
+			.icon{
+				text-align: center;
+			}
+
+			.footer p{
+				margin-top: 25px;
+				font-size: 8px;
+				color: #CCCCCC;
+				text-align: center;
+				margin-bottom: 50px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<p class="site">RED_CRYSTAL</p>
+		<p class="date">KOREA POLYTECHNIC UNIVERSITY<br>SEOUL.2020</p>
+		<div class="helper"></div>
+		<div class="mainlogo">
+			<img src="https://i.postimg.cc/B6GVm8mP/1-1.png">
+			<h1>RED</h1>
+			<h4>INDUSTRIAL<br>DESIGNER</h4>
+			<h1 class="crystal">CRYSTAL</h1>
+		</div>
+	</div>
+
+	<div class="triangle">
+	<img src="https://i.postimg.cc/v8NMYhTQ/5.png" class="align" width="23px">
+	</div>
+
+	<div class="portfolio">
+	<h2>Portfolio</h2>
+		<div class="contents">
+			<a href="Product design.html">
+				<div>
+					<img src="https://i.postimg.cc/hvVtQZ2Q/2-1.jpg" class="image" width="100%">
+				</div>
+				
+				<div class="title">
+					<h3>Product design</h3>
+					<p>All product designs, including mass production and concept design</p>
+				</div>
+			</a>
+
+			<a href="Package design.html">
+				<div>
+					<img src="https://i.postimg.cc/SKkhsN94/2-2.jpg" class="image" width="100%">
+				</div>
+
+				<div class="title">
+					<h3>Peckage design</h3>
+					<p>Results on the design and method of Pekingese for various product lines</p>
+				</div>
+			</a>
+			<a href="Cinema4D work.html">
+				<div>
+					<img src="https://i.postimg.cc/fWpQdvdB/2-3-01.jpg" class="image" width="100%">
+				</div>
+
+				<div class="title">
+					<h3>Cinema4D work</h3>
+					<p>Video, rendering images, and the process of working with cinema4d</p>
+				</div>
+			</a>
+
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<div class="about">
+		<div class="position">
+		<h2>About Me</h2>
+		<div class="photo">
+			<img src="https://i.postimg.cc/Qtybjs4J/3-1.jpg">
+			<img src="https://i.postimg.cc/50VHvrHW/3-2.jpg">
+			<img src="https://i.postimg.cc/RhCNpnQP/3-3.jpg">
+		</div>
+		<p>'Red Crystal' is a witty English version of my name 'Hong Sujeong'. I mainly study and practice product design and modeling and design a wide range of products from living supplies to electronics. Also, I am trying to learn not only product design but also design in various fields such as service design, app/web design, and video production. From now on, I'm going to design more deeply based on what I've learned so far.</p>
+		</div>
+	</div>
+
+	<div class="logoimg">
+		<img src="https://i.postimg.cc/3xqbFsQ6/4.png">
+		<p>2019~2020 - Working as an intern in IKKO design company<br>2020 - Kidp Selected as 'GD(Good Design)' (G2020A01_00098 PURETHINK The SOUP)<br>2022 - korea polytechnic university <b class="lightgrey">(Expected Graduation)</b></p>
+	</div>
+
+	<div class="footer">
+		<div class="icon">
+			<img src="https://i.postimg.cc/3wzG9H1k/6-1.png">
+			<img src="https://i.postimg.cc/J0LkVc9m/6-2.png">
+			<img src="https://i.postimg.cc/zvFRJHrh/6-3.png">
+		</div>
+		<p>E-mail: ghdtnwjd1753@gmail.com l Phone-number: 010-4484-3527 <br>Address: 237, Sangidaehak-ro, Siheung-si, Gyeonggi-do, Republic of Korea</p>
+	</div>
+
+	
+
+</body>
+</html>
